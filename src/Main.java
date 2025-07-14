@@ -14,10 +14,18 @@ Lo shop gestisce diversi tipi di prodotto:
 - Cuffie, caratterizzate dal colore e se sono wireless o cablate
 Utilizzate l’ereditarietà per riutilizzare il codice di Prodotto nella stesura delle classi che gestiscono i vari sotto tipi di prodotto.*/
 
-
+import shop.Cuffie;
+import shop.Smartphone;
+import shop.Televisore;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    public static void main(String[] args) {
+        Smartphone phone = new Smartphone("Xiaomi Redmi 8Plus", "Android 16, 8GB ram", 850, 22, "GHK5896XCV", 256);
+        Televisore tv = new Televisore("SAMSUNG QLED", "Televisore 4K Tecnlogia QLED SAMSUNG", 899.99, 22, 55, true);
+        Cuffie cuffie = new Cuffie("Sony Diablo X5", "Cuffie BassBoosted", 250.0, 22, "Grigio", true);
+
+        System.out.println(phone);
+        System.out.println(tv);
+        System.out.println(cuffie);
     }
 }
