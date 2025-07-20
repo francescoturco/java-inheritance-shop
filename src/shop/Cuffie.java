@@ -27,8 +27,9 @@ public class Cuffie extends Prodotto {
     }
 
 
+     @Override
     public String toString() {
-        return nomeEsteso() + " | Cuffie " + (wireless ? "Wireless" : "Cablato") + " - Colore: " + colore + ", Prezzo: €" + getPrezzoFormattato();
+        return nomeEsteso() + " Cuffie - " + (wireless ? "Wireless" : "Cablato") + ", Colore: " + colore + ", Prezzo: " + getPrezzoFormattato();
     }
 
 

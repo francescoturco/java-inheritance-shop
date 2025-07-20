@@ -94,4 +94,9 @@ public class Prodotto {
     public String getPrezzoFormattato() {
         return String.format("%.2f", prezzoConIva());
     }
+
+    @Override
+    public String toString() {
+        return nomeEsteso() + " - Prezzo: " + getPrezzoFormattato();
+    }
 }

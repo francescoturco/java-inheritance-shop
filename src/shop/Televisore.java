@@ -26,7 +26,8 @@ public class Televisore extends Prodotto {
         this.smart = smart;
     }
 
+    @Override
     public String toString() {
-        return nomeEsteso() + " | TV " + dimensioni + "\" " + (smart ? "Smart" : "Non Smart") + ", Prezzo: €" + getPrezzoFormattato();
+        return nomeEsteso() + " Televisore - " + dimensioni + "\" " + (smart ? "Smart" : "Non Smart") + ", Prezzo: " + getPrezzoFormattato();
     }
 }

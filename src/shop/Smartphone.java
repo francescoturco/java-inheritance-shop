@@ -27,7 +27,8 @@ public class Smartphone extends Prodotto {
     }
 
 
+    @Override
     public String toString() {
-        return nomeEsteso() + " Codice IMEI: " + imei + ", Memoria: " + memoria + "GB, Prezzo:" + getPrezzoFormattato();
+        return nomeEsteso() + " Smartphone - IMEI: " + imei + ", Memoria: " + memoria + "GB, Prezzo: " + getPrezzoFormattato();
     }
 }
